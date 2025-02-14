@@ -19,8 +19,9 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.27.0</version>
+    <version>4.28.1</version>
 </dependency>
+
 
 <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 <dependency>
@@ -78,8 +79,13 @@
     <version>2.24.3</version>
     <scope>test</scope>
 </dependency>
-  
-  
-  
+
+
+
+  	<dependency>
+  		<groupId>OpencartV121</groupId>
+  		<artifactId>OpencartV121</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 </project>
