@@ -25,9 +25,11 @@ public class TC6_ScrollingPage {
 	@Test
 	public void testscrolling() {
 		sp.scrollDownByPixels(1000);
+		sp.Elementvisible();
+		sp.Tillendofthepage();
 		}
-	@AfterClass
-	public void teardown() {
-		driver.close();
-	}
+	   @AfterClass
+	   public void teardown() {
+	       	driver.quit();
+	   }
 	}
