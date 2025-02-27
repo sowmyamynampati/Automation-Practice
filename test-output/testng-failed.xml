@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC6_ScrollingPage">
+      <class name="testCases.TC12_Windowstab">
         <methods>
-          <include name="teardown"/>
-          <include name="testscrolling"/>
           <include name="setup"/>
+          <include name="verifyTitle2"/>
+          <include name="teardown"/>
+          <include name="verifyTitle1"/>
         </methods>
-      </class> <!-- testCases.TC6_ScrollingPage -->
+      </class> <!-- testCases.TC12_Windowstab -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,6 +12,7 @@ import pageObjects.GUIElements;
 
 public class TC1_GUIElements  {
 	public WebDriver driver;
+	GUIElements lp;
 	
 	@BeforeClass
 	public void Setup() {
@@ -20,11 +21,11 @@ public class TC1_GUIElements  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
+	 lp = new GUIElements(driver);
 		}
 	
 	@Test
 	public void LoginTest()  {
-		GUIElements lp = new GUIElements(driver);
 		lp.setname("Sowmya");
 		lp.setemail("433sowmyareddy@gmail.com");
 		lp.setphone("+1 7373415898");

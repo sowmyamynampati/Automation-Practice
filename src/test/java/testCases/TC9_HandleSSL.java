@@ -17,8 +17,8 @@ public class TC9_HandleSSL {
         options.setAcceptInsecureCerts(true); // Accepts SSL Certificates
 
         driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
-        driver.get("https://expired.badssl.com/");
+      driver.get("https://expired.badssl.com/");
+      driver.manage().window().maximize();
     }
 
     @Test

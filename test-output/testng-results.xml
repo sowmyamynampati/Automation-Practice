@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-20T17:43:25 EST" name="Default suite" finished-at="2025-02-20T17:43:31 EST" duration-ms="5773">
+  <suite started-at="2025-02-27T14:07:44 EST" name="Default suite" finished-at="2025-02-27T14:07:50 EST" duration-ms="5443">
     <groups>
     </groups>
-    <test started-at="2025-02-20T17:43:25 EST" name="Default test" finished-at="2025-02-20T17:43:31 EST" duration-ms="5773">
-      <class name="testCases.TC2_AlertPopups">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testCases.TC2_AlertPopups@60b4beb4]" started-at="2025-02-20T17:43:25 EST" name="Setup" finished-at="2025-02-20T17:43:30 EST" duration-ms="4645" status="PASS">
+    <test started-at="2025-02-27T14:07:44 EST" name="Default test" finished-at="2025-02-27T14:07:50 EST" duration-ms="5443">
+      <class name="testCases.TC13_StaticWebTable">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC13_StaticWebTable@60b4beb4]" started-at="2025-02-27T14:07:44 EST" name="setup" finished-at="2025-02-27T14:07:49 EST" duration-ms="4766" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="Alerts()[pri:0, instance:testCases.TC2_AlertPopups@60b4beb4]" started-at="2025-02-20T17:43:30 EST" name="Alerts" finished-at="2025-02-20T17:43:31 EST" duration-ms="755" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="StaticTable()[pri:0, instance:testCases.TC13_StaticWebTable@60b4beb4]" started-at="2025-02-27T14:07:49 EST" name="StaticTable" finished-at="2025-02-27T14:07:50 EST" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Alerts -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testCases.TC2_AlertPopups@60b4beb4]" started-at="2025-02-20T17:43:31 EST" name="Teardown" finished-at="2025-02-20T17:43:31 EST" duration-ms="275" status="PASS">
+        </test-method> <!-- StaticTable -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC13_StaticWebTable@60b4beb4]" started-at="2025-02-27T14:07:50 EST" name="teardown" finished-at="2025-02-27T14:07:50 EST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- testCases.TC2_AlertPopups -->
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC13_StaticWebTable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

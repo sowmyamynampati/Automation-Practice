@@ -20,7 +20,7 @@ public class Screenshots {
 		PageFactory.initElements(driver, this);
 		}
 	//Locators
-	@FindBy(xpath="//div[@class='product-grid home-page-product-grid']")
+	@FindBy(xpath="//div[contains(@class, 'product-grid')]")
 	WebElement Featuredproducts;
 	
 //Full page screenshot and create Screenshots folder gave path
@@ -34,7 +34,7 @@ public class Screenshots {
 	
 	//Capturing the screenshot for specific section only in Selenium4 , webelement is also an interface
 	public void SpecificScetion() {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		    wait.until(ExpectedConditions.visibilityOf(Featuredproducts));
 		File sourcefile=Featuredproducts.getScreenshotAs(OutputType.FILE);
 		File targetfile= new File(System.getProperty("user.dir")+"\\Screenshots\\featuredProducts.png");

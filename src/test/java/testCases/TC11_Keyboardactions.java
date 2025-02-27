@@ -9,28 +9,28 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.Screenshots;
+import pageObjects.Keyboardactions;
 
-public class TC7_Screenshots {
+public class TC11_Keyboardactions {
 	WebDriver driver;
-	Screenshots fs;
+	Keyboardactions ka;
 	@BeforeClass
 	public void setup() {
 		driver= new ChromeDriver();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.get("https://demo.nopcommerce.com/");
-		  driver.manage().window().maximize();
-		fs= new Screenshots(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.get("https://text-compare.com/");
+		driver.manage().window().maximize();
+		ka= new Keyboardactions(driver);
 	}
-	@Test
-	public void Screenshot() {
-		fs.FullpageScreenshot();  
-		fs.SpecificScetion() ;
+@Test
+public void Keyboardfunctions() {
+   ka.Text("Selenium");
+	Assert.assertTrue(true);
 
-		}
+}
 	@AfterClass
 	public void teardown() {
 		driver.quit();
 	}
-}
+	}
